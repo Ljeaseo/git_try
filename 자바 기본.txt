@@ -1,0 +1,42 @@
+언어에는 절차지향언어와 객체지향언어가 있는데
+JAVA는 객체지향언어이다.
+
+객체지향 언어의 특징 - 캡슐화, 상속, 다형성을 지원. 
+
+자바는 class안에 메소드,변수, 상수를 가진다.
+
+자바는 기본 데이터 type이 8가지다
+
+byte, short, int, long, float, double, char, boolean
+
+논리형 boolean  //참 거짓                        1비트
+문자형 char // 한글자만 취급 ''으로 묶음       2바이트
+정수형 byte short int long //숫자 ex)3           1바이트 2바이트 4바이트 8바이트
+실수형 float double //숫자 ex)2.5                   4바이트 8바이트
+
+8bit가 1byte이다. 숫자가 커질수록 차지하는 공간을 더 많이 가질 수 있다는말로 알아들으면 쉬움
+
+int a = 1;  
+long b = a; 이런식으로 하면 오류남  타입을 바꿀때는 필요한 함수가 있음
+예를들어 문자를 숫자로 바꿀땐
+String a = "1234";
+Integer.parseInt(a)  =>   a = 1234
+이런식이다.
+
+문자열을 사용할때는 String을 사용 ""로 묶음
+변수를 줄때 String a = "가나다"; ,   int b = 1;
+이런식으로 자바스크립트와는 다르게 무조건 구문이 끝나면 ;를 적어줘야함
+
+자바 스크립트에서는 상수를 const로 줬지만 자바에서는 final을 앞에 붙여줘야함
+ex) final int a = 1;
+
+접근성
+클래스나 변수앞에
+public protected (default) private
+이런게 붙은구문이 나올텐데
+
+허용하는 범위라고 보면 된다
+
+가장 널널한것부터 까다로운것까지
+순서는 이렇다
+public > protected > (default) > private

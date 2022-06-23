@@ -1,0 +1,39 @@
+동적배열
+List set map 등
+자바에서 동적배열을 사용하려면 첫줄에서 클래스를 불러와야함
+
+import java.util.ArrayList;
+이런식으로 쓴다
+근데 보통 공부할땐 귀찮으니 *로 쓰는 경우가 많지만
+*는 전체를 의미하는 말이므로 속도면에서 차이난다.
+그냥 몇개 안쓸거면 쓸것만 적어주자
+
+동적배열 선언
+import java.util.ArrayList;
+
+ArrayList<Integer> arr = new ArrayList<>();
+
+<> 안에있는 확장자는 동일해야함
+
+정석적인 방법은
+ArrayList<Integer> arr = new ArrayList<Integer>(초기크기설정);
+Integer는 숫자를 받지만 int는 아니다.
+arr 배열값을 int로 받아오려면 데이터 형변환을 해야함
+동적배열 데이터 넣는법
+
+ArrayList<Integer> arr = new ArrayList<>();
+
+arr.add(0);
+arr.add(1);
+arr.add(2);
+
+arr를 출력하려면 for을 안돌려도 된다
+System.out.print(arr);   //  [0,1,2,3,4]
+
+동적배열의 위치값을 보려면 get이라는 명령어를 쓴다.
+arr.get(0) = 0
+arr.get(1) = 1
+arr.get(2) = 2
+
+정적배열과 다르게 이놈의 길이를 알고싶다면
+arr.size()로 적어야함
