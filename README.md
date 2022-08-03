@@ -1,1 +1,1 @@
-# study__
+# study
